@@ -1,0 +1,457 @@
+/* Fuente Externa */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Generales */
+h1 {
+    color: ivory;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: ivory;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-style: italic;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+}
+
+body {
+    background-color: black;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Barra de Nav */
+nav {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.principal-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para el logo */
+.header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-flex img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 360px) {
+    .header-flex {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-flex {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-flex {
+        padding: 20px;
+    }
+}
+
+/* Estilos index.html */
+.seccion-principal {
+    background-color: black;
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+
+.seccion-principal h1 {
+    padding: 2%;
+}
+
+.seccion-principal p {
+    font-family: sans-serif;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 30em;
+
+}
+
+
+@media (min-width: 360px) {
+    .seccion-principal p {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .seccion-principal p {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seccion-principal p {
+        max-width: 60%;
+    }
+}
+
+.negrita {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.flex-giras {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-giras img {
+    max-width: 100%;
+    width: 500px;
+    padding: 10px;
+}
+
+/* Estilos discography.html */
+.album {
+    display: inline-block;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.album-2022 {
+    color: indianred;
+}
+
+.album-2019 {
+    color: cornflowerblue;
+}
+
+.album-2016 {
+    color: darkslateblue;
+}
+
+.album-2014 {
+    color: darkred;
+}
+
+.album-2013 {
+    color: coral;
+}
+
+.album-2011 {
+    color: dimgrey;
+}
+
+.video-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stream-videos {
+    color: ivory;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilos updates.html */
+.updates {
+    color: white;
+    display: grid;
+
+}
+
+.updates img {
+    width: 100%;
+    height: auto;
+}
+
+.updates h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.updates p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+}
+
+@media screen and (min-width: 360px) {
+    .updates {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .updates h2 {
+        font-size: 18px;
+    }
+
+    .updates p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .updates {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .updates h2 {
+        font-size: 20px;
+    }
+
+    .updates p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .updates {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .updates h2 {
+        font-size: 24px;
+    }
+
+    .updates p {
+        font-size: 16px;
+    }
+}
+
+
+/* Estilos contact.html */
+.input:focus {
+    background-color: lightgrey;
+    transform: scale(1.1);
+}
+
+#main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../imagenes/sticky-how-to-fly.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#main-contact h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+}
+
+#main-contact p {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    #main-contact p {
+        color: white;
+    }
+}
+
+#main-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#main-contact input[type=text],
+#main-contact input[type=number],
+#main-contact select {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#main-contact input[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#main-contact input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+
+    #main-contact input[type=text],
+    #main-contact input[type=number],
+    #main-contact select {
+        width: 70%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main-contact {
+        padding: 40px;
+    }
+
+    #main-contact h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Footer */
+footer {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-juan {
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    footer a {
+        margin: 0;
+    }
+
+    .footer-juan {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        height: 100px;
+    }
+}
